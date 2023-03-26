@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Homework2 {
+public class SecondHomework {
 
 
     public static void main (String[] args) {
@@ -9,8 +9,8 @@ public class Homework2 {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Whats your name, user?");
-        String txt = scan.nextLine();
-        System.out.printf("Hello ;), %s ", txt);
+        String name = scan.nextLine();
+        System.out.printf("Hello ;), %s ", name);
         scan.close();
     }
 }
