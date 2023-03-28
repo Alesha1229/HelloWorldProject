@@ -29,7 +29,6 @@ public class ForloopClass {
 //        }
 
 
-
 //        int count= 100;
 //        while(count>0) {
 //            System.out.println("count:" + count);
@@ -40,15 +39,13 @@ public class ForloopClass {
 //        }
 
 
-
-        int count =5;
-        for(;count<=100;count++,count*=2){
+        int count = 5;
+        for (; count <= 100; count++, count *= 2) {
             System.out.println(count);
 
         }
 
 
-
-        }
     }
+}
 

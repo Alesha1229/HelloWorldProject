@@ -1,8 +1,9 @@
 import java.util.Scanner;
+
 public class SecondHomework {
 
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         String a = "This is my second homework :)";
         System.out.println(a);
