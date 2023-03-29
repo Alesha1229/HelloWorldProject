@@ -1,3 +1,5 @@
+package ClassWork.С2;
+
 public class HelloWorld {
 
 
