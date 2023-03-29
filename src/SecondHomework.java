@@ -1,5 +1,3 @@
-package HomeWork.H2;
-
 import java.util.Scanner;
 public class SecondHomework {
 
