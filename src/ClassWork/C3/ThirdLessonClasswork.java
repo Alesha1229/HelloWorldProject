@@ -1,3 +1,5 @@
+package ClassWork.C3;
+
 import java.util.Scanner;
 
 public class ThirdLessonClasswork {
