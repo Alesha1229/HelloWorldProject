@@ -1,4 +1,4 @@
-package ClassWork.C2;
+package ClassWork.С2;
 
 public class HelloWorld {
 
