@@ -29,6 +29,8 @@ public class H3FirstTask {
             case 7:
                 System.out.println("This is Purple color!");
                 break;
+            default:
+                System.out.println("Wrong number");
         }
 
 

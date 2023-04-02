@@ -4,10 +4,11 @@ package HomeWork.H3;
 
 public class H3FourTask {
     public static void main(String[] args) {
-        for(int num = 0;num<=20;num+=5){
-            if(num<0) {
+        int num = 0;
+        for(int count = 0;count<=19;count+=1){
+            if(count%2==0) { num+=5;
                 System.out.println(num);
-            } else {
+            } else { num+=5;
                 System.out.println(-num);
             }
         }
