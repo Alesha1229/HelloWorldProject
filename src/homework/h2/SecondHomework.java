@@ -1,4 +1,4 @@
-package HomeWork.H2;
+package homework.h2;
 
 import java.util.Scanner;
 public class SecondHomework {

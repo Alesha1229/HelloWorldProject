@@ -1,10 +1,10 @@
-package ClassWork.С2;
+package classwork.c2;
 
 public class HelloWorld {
 
 
 
-    // public - видят все,
+    // public - видят все, 777
     // static - ненужный объект нашего класса,
     // void - ничего нам не возвращает
     // main- тарт приложения

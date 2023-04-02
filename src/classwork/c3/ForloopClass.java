@@ -1,11 +1,9 @@
-package ClassWork.C3;
-
-import java.util.Random;
+package classwork.c3;
 
 public class ForloopClass {
     public static void main(String[] args) {
 //        for(int counter = 0;counter<100;counter++) {
-//            System.out.println("aaaaaa" +counter);
+//            System.out.println("aaaaaa" +counter); // 777
 //        }
 //    for(int x = 0;x<=100;x++) {
 //        if (x % 2 == 0) {

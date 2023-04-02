@@ -1,4 +1,4 @@
-package ClassWork.C4;
+package classwork.c4;
 
 import java.util.Arrays;
 import java.util.Random;

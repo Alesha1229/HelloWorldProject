@@ -1,11 +1,11 @@
-package ClassWork.C3;
+package classwork.c3;
 
 import java.util.Scanner;
 
 public class ThirdLessonClasswork {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); //777
         int month = scanner.nextInt();
         switch (month) {
             case 12:

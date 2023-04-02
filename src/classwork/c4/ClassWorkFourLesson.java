@@ -1,7 +1,6 @@
-package ClassWork.C4;
+package classwork.c4;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class ClassWorkFourLesson {
     public static void main(String[] args) {

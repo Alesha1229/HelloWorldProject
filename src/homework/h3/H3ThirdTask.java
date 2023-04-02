@@ -1,4 +1,4 @@
-package HomeWork.H3;
+package homework.h3;
 
 public class H3ThirdTask {
     public static void main(String[] args) {
