@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class secondH4 {
+public class SecondH4 {
 
     public static void main(String[] args) {
 

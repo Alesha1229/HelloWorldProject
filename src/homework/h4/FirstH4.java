@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class firstH4 {
+public class FirstH4 {
     public static void main(String[] args) {
 
         System.out.println("enter the number to search");

@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
-public class thirdH4 {
+public class ThirdH4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter array length");

@@ -1,21 +1,19 @@
 package homework.h4;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
 
-public class fourH4 {
+public class FourH4 {
     public static void main(String[] args) {
-        Random random1 = new Random();
-        Random random2 = new Random();
+        Random random = new Random();
         int[] arr1 = new int[5];
 
         for (int i = 0; i < arr1.length; i++) {
-            arr1[i] = random1.nextInt(10);
+            arr1[i] = random.nextInt(10);
         }
         int[] arr2 = new int[5];
         for (int i = 0; i < arr2.length; i++) {
-            arr2[i] = random2.nextInt(10);
+            arr2[i] = random.nextInt(10);
         }
 
 
