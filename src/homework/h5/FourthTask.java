@@ -11,7 +11,7 @@ public class FourthTask {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 arr[i][j] = random.nextInt(5);
-                sum = sum + arr[i][j];
+                sum += arr[i][j];
 
 
             }
