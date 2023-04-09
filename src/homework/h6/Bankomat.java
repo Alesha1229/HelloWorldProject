@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Bankomat {
     public static void main(String[] args) {
-        CreditCards card1 = new CreditCards(10,1234);
-        CreditCards card2 = new CreditCards(20,5678);
-        CreditCards card3 = new CreditCards(30,9012);
+        CreditCards card1 = new CreditCards(1000,1234);
+        CreditCards card2 = new CreditCards(2000,5678);
+        CreditCards card3 = new CreditCards(3000,9012);
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose card");
@@ -37,6 +37,10 @@ public class Bankomat {
                 } else if (chooseAddMoney == 3) {
                     card1.addMoney(+100);
                 }
+                System.out.print("Money:");
+                System.out.println(card1.getMoney());
+                System.out.print("Bank account:");
+                System.out.println(card1.getBankAcc());
 
             } else if (chooseAction == 2) {
                 System.out.println("How much money will get?");
@@ -45,12 +49,16 @@ public class Bankomat {
                 System.out.println("3)-100");
                 int chooseGetMoney = scanner.nextInt();
                 if (chooseGetMoney == 1) {
-                    card1.addMoney(+20);
+                    card1.getMoney(+20);
                 } else if (chooseGetMoney == 2) {
-                    card1.addMoney(+50);
+                    card1.getMoney(+50);
                 } else if (chooseGetMoney == 3) {
-                    card1.addMoney(+100);
+                    card1.getMoney(+100);
                 }
+                System.out.print("Money:");
+                System.out.println(card1.getMoney());
+                System.out.print("Bank account:");
+                System.out.println(card1.getBankAcc());
             }
                 else if (chooseAction == 3) {
                 System.out.print("Money:");
@@ -58,9 +66,7 @@ public class Bankomat {
                 System.out.print("Bank account:");
                 System.out.println(card1.getBankAcc());
             }
-                else if (chooseAction == 4) {
-                    return;
-            }
+
 
 
 
@@ -88,20 +94,28 @@ public class Bankomat {
                 } else if (chooseAddMoney == 3) {
                     card2.addMoney(+100);
                 }
+                System.out.print("Money:");
+                System.out.println(card2.getMoney());
+                System.out.print("Bank account:");
+                System.out.println(card2.getBankAcc());
 
             } else if (chooseAction == 2) {
                 System.out.println("How much money will get?");
+                System.out.println("1)-20");
+                System.out.println("2)-50");
+                System.out.println("3)-100");
                 int chooseGetMoney = scanner.nextInt();
                 if (chooseGetMoney == 1) {
-                    card2.addMoney(+20);
-                    System.out.println("1)-20");
-                    System.out.println("2)-50");
-                    System.out.println("3)-100");
+                    card2.getMoney(+20);
                 } else if (chooseGetMoney == 2) {
-                    card2.addMoney(+50);
+                    card2.getMoney(+50);
                 } else if (chooseGetMoney == 3) {
-                    card2.addMoney(+100);
+                    card2.getMoney(+100);
                 }
+                System.out.print("Money:");
+                System.out.println(card2.getMoney());
+                System.out.print("Bank account:");
+                System.out.println(card2.getBankAcc());
             } else if (chooseAction == 3) {
                 System.out.print("Money:");
                 System.out.println(card2.getMoney());
@@ -131,6 +145,10 @@ public class Bankomat {
                     } else if (chooseAddMoney == 3) {
                         card3.addMoney(+100);
                     }
+                    System.out.print("Money:");
+                    System.out.println(card3.getMoney());
+                    System.out.print("Bank account:");
+                    System.out.println(card3.getBankAcc());
 
                 } else if (chooseAction == 2) {
                     System.out.println("How much money will get?");
@@ -139,12 +157,16 @@ public class Bankomat {
                     System.out.println("3)-100");
                     int chooseGetMoney = scanner.nextInt();
                     if (chooseGetMoney == 1) {
-                        card3.addMoney(+20);
+                        card3.getMoney(+20);
                     } else if (chooseGetMoney == 2) {
-                        card3.addMoney(+50);
+                        card3.getMoney(+50);
                     } else if (chooseGetMoney == 3) {
-                        card3.addMoney(+100);
+                        card3.getMoney(+100);
                     }
+                    System.out.print("Money:");
+                    System.out.println(card3.getMoney());
+                    System.out.print("Bank account:");
+                    System.out.println(card3.getBankAcc());
                 }else if(chooseAction == 3){
                     System.out.print("Money:");
                     System.out.println(card3.getMoney());
