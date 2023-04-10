@@ -1,6 +1,6 @@
 package homework.h6;
 
-public class CreditCards {
+public class CreditCard {
     private int money;
     private int bankAcc;
 
@@ -20,21 +20,22 @@ public class CreditCards {
         this.bankAcc = bankAcc;
     }
 
-    public CreditCards(int money, int bankAcc) {
+    public CreditCard(int money, int bankAcc) {
         this.money = money;
         this.bankAcc = bankAcc;
     }
 
-        public void addMoney(int addMoney){
-            money += addMoney;
-            System.out.println("+" + addMoney);
-        }
-    public void getMoney(int getMoney){
+    public void addMoney(int addMoney) {
+        money += addMoney;
+        System.out.println("+" + addMoney);
+    }
+
+    public void getMoney(int getMoney) {
         money -= getMoney;
         System.out.println("-" + getMoney);
     }
 
-    }
+}
 
 
 
