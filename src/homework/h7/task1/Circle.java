@@ -1,14 +1,14 @@
-package homework.h7;
+package homework.h7.task1;
 
 public class Circle extends Figure {
     private double pi = 3.14;
     private double radius;
 
 
-
-    public void setRadius(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
+
     double square;
     @Override
     public void getSquare() {

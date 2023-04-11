@@ -1,4 +1,4 @@
-package homework.h7;
+package homework.h7.task1;
 
 public class Triangle extends Figure{
     private double katet1;
@@ -6,24 +6,12 @@ public class Triangle extends Figure{
     private double gipotinuza;
 
 
-
-    public double getKatet1() {
-        return katet1;
-    }
-
-    public void setKatet1(double katet1) {
+    public Triangle(double katet1, double katet2, double gipotinuza) {
         this.katet1 = katet1;
-    }
-
-
-    public void setKatet2(double katet2) {
         this.katet2 = katet2;
-    }
-
-
-    public void setGipotinuza(double gipotinuza) {
         this.gipotinuza = gipotinuza;
     }
+
     double square;
     @Override
     public void getSquare() {

@@ -1,14 +1,11 @@
-package homework.h7;
+package homework.h7.task1;
 
 public class Rectangle extends Figure{
     private double storona1;
     private double storona2;
 
-    public void setStorona1(double storona1) {
+    public Rectangle(double storona1, double storona2) {
         this.storona1 = storona1;
-    }
-
-    public void setStorona2(double storona2) {
         this.storona2 = storona2;
     }
 

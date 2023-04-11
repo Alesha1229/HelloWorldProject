@@ -1,4 +1,4 @@
-package homework.h7;
+package homework.h7.task1;
 
 public abstract class Figure {
     private double square;
