@@ -1,10 +1,5 @@
 package homework.h7.task1;
 
-import classwork.c7.flying.AirPLane;
-import classwork.c7.flying.Duck;
-import classwork.c7.flying.Flyable;
-
-import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
@@ -45,8 +40,14 @@ public class Main {
 //        double sum = rectangle1.perimetr + rectangle2.perimetr + circle1.perimetr + circle2.perimetr + triangle1.perimetr;
 //        System.out.println("Сумма периметров:"+sum);
 
+
+        Figure[] figureItems = new Figure[5];
+        figureItems[0] = new Circle(12);
+        figureItems[1] = new Triangle(3,4,5);
+        figureItems[2] = new Rectangle(12,18);
+        figureItems[3] = new Circle(14);
+        figureItems[4] = new Circle(8);
         int i = 0;
-        Figure[] figureItems = getFigures();
         for (Figure figure : figureItems) {
             if(i<6){
             i ++;}
@@ -59,15 +60,10 @@ public class Main {
         }
     }
 
-    private static Figure[] getFigures() {
-        Figure[] figureItems = new Figure[5];
-        figureItems[0] = new Circle(12);
-        figureItems[1] = new Triangle(3,4,5);
-        figureItems[2] = new Rectangle(12,18);
-        figureItems[3] = new Circle(14);
-        figureItems[4] = new Circle(8);
-        return figureItems;
-    }
+
+
+
+
 
 }
 
