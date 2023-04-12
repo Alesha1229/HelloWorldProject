@@ -11,15 +11,17 @@ public class Rectangle extends Figure{
 
     double square;
     @Override
-    public void getSquare() {
+    public double getSquare() {
        square = storona1 * storona2;
         System.out.println("square = "+square);
+        return 0;
     }
 
     double perimetr;
     @Override
-    public void getPerimetr() {
+    public double getPerimetr() {
         perimetr = storona1 * storona2 * 2;
         System.out.println("perimetr = "+perimetr);
+        return 0;
     }
 }

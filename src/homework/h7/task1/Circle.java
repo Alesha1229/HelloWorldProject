@@ -11,15 +11,17 @@ public class Circle extends Figure {
 
     double square;
     @Override
-    public void getSquare() {
+    public double getSquare() {
         square = pi * radius * radius;
         System.out.println("square = "+square);
+        return 0;
     }
     public double perimetr;
 
     @Override
-    public void getPerimetr() {
+    public double getPerimetr() {
         perimetr = 2 * pi * radius;
         System.out.println("perimetr = "+perimetr);
+        return 0;
     }
 }

@@ -14,15 +14,17 @@ public class Triangle extends Figure{
 
     double square;
     @Override
-    public void getSquare() {
+    public double getSquare() {
        square = (katet1*katet2)/2;
         System.out.println("square = "+square);
+        return 0;
     }
 
     public double perimetr;
     @Override
-    public void getPerimetr() {
+    public double getPerimetr() {
         perimetr = katet1 + katet2 + gipotinuza;
         System.out.println("perimetr = "+perimetr);
+        return 0;
     }
 }
