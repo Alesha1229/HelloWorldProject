@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Phone {
     private int number;
-    public String model;
-    public int weight;
+    private String model;
+    private int weight;
 
     int numberForExample;
     Scanner scanner = new Scanner(System.in);
