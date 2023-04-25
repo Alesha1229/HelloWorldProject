@@ -1,19 +1,57 @@
 package homework.h10;
 
-public class MainTask1 {
-    String format = "1234-abc-5678-def-1a2b";
+import java.util.Scanner;
 
-    public String getFormat() {
-        return format;
-    }
+public class MainTask1 {
+    static String format = "1234-abc-5678-def-1a2b";
+
+
+
+
 
     public static void main(String[] args) {
         System.out.println("Напишите номер док-та в таком формате: xxxx-yyy-xxxx-yyy-xyxy");
-        String format = "1234-abc-5678-def-1a2b";
+        System.out.println("x-цифры, y-буквы");
+        Scanner scanner = new Scanner(System.in);
+        StringBuilder format = new StringBuilder();
 
-        System.out.println("- Вывести на экран в одну строку два первых блока по 4 цифры.");
-        System.out.print(format.substring(0,4));
-        System.out.println(format.substring(9,13));
+        System.out.println("xxxx:");
+        String first4x = scanner.nextLine();
+        format.append(first4x);
+
+        format.append("-");
+
+        System.out.println("yyy:");
+        String first3y = scanner.nextLine();
+        format.append(first3y);
+
+        format.append("-");
+
+        System.out.println("xxxx:");
+        String second4x = scanner.nextLine();
+        format.append(second4x);
+
+        format.append("-");
+
+        System.out.println("yyy:");
+        String second3y = scanner.nextLine();
+        format.append(second3y);
+
+        format.append("-");
+
+        System.out.println("xyxy:");
+        String xyxy = scanner.nextLine();
+        format.append(xyxy);
+
+        System.out.println(format);
+
+
+
+
+        MethodsString.task1(format);
+
+
+
 
 
     }
