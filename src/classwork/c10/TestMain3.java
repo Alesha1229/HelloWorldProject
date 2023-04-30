@@ -9,10 +9,10 @@ public class TestMain3 {
         builder.append("first")
                 .append(" ")
                 .append("example");  // создаёт строку из этих слов
-        /*builder.setCharAt(0,'E'); // меняет 0ой символ на Е
+        builder.setCharAt(0,'E'); // меняет 0ой символ на Е
         builder.insert(8, "First "); // вставляем текст в builder на 9ое место
         builder.delete(15,21); // удаляет с 15 по 21 символ
-        builder.indexOf("First");*/
+        builder.indexOf("First");
 
         //builder.reverse(); // реверс всех символов
 
