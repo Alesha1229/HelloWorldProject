@@ -4,9 +4,6 @@ import java.util.Arrays;
 import java.util.Locale;
 
 public class MethodsString {
-    public static String format = new String("1234-abc-5678-def-1a2b");
-
-
 
     public static void task1(String format){
         System.out.println("- Вывести на экран в одну строку два первых блока по 4 цифры.");
