@@ -7,9 +7,8 @@ import java.util.Scanner;
 public class DocReader {
     public static void Reader() throws FileNotFoundException {
         System.out.println("Give me the path of your file");
-        String path = "C:\\h12FIle.doc";
-        System.out.println(path);
-        //Scanner path = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        String path = scanner.nextLine();
         FileReader reader = new FileReader(String.valueOf(path));
         Scanner scanner1 = new Scanner(reader);
         System.out.println();
