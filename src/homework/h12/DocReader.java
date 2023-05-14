@@ -9,12 +9,17 @@ public class DocReader {
         System.out.println("Give me the path of your file");
         Scanner scanner = new Scanner(System.in);
         String path = scanner.nextLine();
-        FileReader reader = new FileReader(String.valueOf(path));
-        Scanner scanner1 = new Scanner(reader);
+        try {
+            FileReader reader = new FileReader(String.valueOf(path));
+            scanner = new Scanner(reader);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
         System.out.println();
 
-        while (scanner1.hasNext()) {
-            String test = scanner1.nextLine();
+        while (scanner.hasNext()) {
+            String test = scanner.nextLine();
             DocumFilter.accept(test);
             //DocumFilter.accept(scanner1.toString());
             //System.out.println(scanner1.nextLine());
