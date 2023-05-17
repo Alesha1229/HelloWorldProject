@@ -8,23 +8,24 @@ public class Tasks {
 
     public static void task1() {
         try {
-            FileReader reader = new FileReader("h13.txt");
-            Scanner scanner = new Scanner(reader);
+            FileReader reader = new FileReader("h13task1.txt");
+            scanner = new Scanner(reader);
 
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        Set<String> set = new TreeSet<>();
+        List<String> sortWords = new ArrayList<>();
         while (scanner.hasNext()) {
             String str = scanner.next();
-            set.add(str);
+            sortWords.add(str);
         }
-        System.out.println(set);
+        Collections.sort(sortWords);
+        System.out.println(sortWords);
     }
 
     public static void task2() {
         try {
-            FileReader reader = new FileReader("h13.txt");
+            FileReader reader = new FileReader("h13task2.txt");
             scanner = new Scanner(reader);
 
         } catch (Exception e) {
@@ -32,8 +33,8 @@ public class Tasks {
         }
         Set<String> set = new HashSet<>();
         while (scanner.hasNext()) {
-            String str = scanner.next();
-            set.add(str);
+            String numbers = scanner.next();
+            set.add(numbers);
         }
         System.out.println(set);
 

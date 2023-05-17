@@ -8,8 +8,8 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         Tasks.task1();
-//        Tasks.task2();
-//        Tasks.task3();
+        Tasks.task2();
+        Tasks.task3();
     }
 
 }
