@@ -29,14 +29,12 @@ public class MainH16 {
         System.out.println(yearCollectForEachAuthor);
 
         Map<Integer, Long> yearCountOfBooks = library.stream()
-                .map(Book::getYear)
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+                .collect(Collectors.groupingBy(Book::getYear, Collectors.counting()));
 
         System.out.println(yearCountOfBooks);
 
         Map<String, Long> authorCountOfBooks = library.stream()
-                .map(Book::getAuthor)
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
 
         System.out.println(authorCountOfBooks);
     }
