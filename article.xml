@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<articles>
+    <article>
+        <title>Example</title>
+        <content>content</content>
+    </article>
+    <article>
+        <title>Ex2</title>
+        <content>cont2</content>
+    </article>
+</articles>
