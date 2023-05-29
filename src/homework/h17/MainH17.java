@@ -9,16 +9,17 @@ import java.util.regex.Pattern;
 public class MainH17 {
 
     public static final String DEFAULT_DOC_FORMAT = "(\\d{4}-[a-z]{3}-){2}(\\d[a-z]){2}";
-    public static final String DEFAULT_PHONE_FORMAT = "(\\d{4}-[a-z]{3}-){2}(\\d[a-z]){2}";
-    public static final String DEFAULT_MAIL_FORMAT = "(\\d{4}-[a-z]{3}-){2}(\\d[a-z]){2}";
+    public static final String DEFAULT_PHONE_FORMAT = "^\\+\\(\\d{2}\\)\\d{7}$";
+    public static final String DEFAULT_MAIL_FORMAT = "^[A-Za-z0-9+_.-]{2,}+@[A-Za-z]{2,}+.[A-Za-z]{2,}$";
     public static void main(String[] args) {
         Map<String, Document> allDocs_Numbers_Emails = new HashMap<>();
+
 
     }
     public static String docOrPhoneOrMail(String str) {
         Pattern docNumber = Pattern.compile(DEFAULT_DOC_FORMAT);
-        Pattern phoneNumber = Pattern.compile(DEFAULT_DOC_FORMAT);
-        Pattern mail = Pattern.compile(DEFAULT_DOC_FORMAT);
+        Pattern phoneNumber = Pattern.compile(DEFAULT_PHONE_FORMAT);
+        Pattern mail = Pattern.compile(DEFAULT_MAIL_FORMAT);
 
         if (docNumber.matcher(str).matches()){
             return "thisDoc";
@@ -27,6 +28,10 @@ public class MainH17 {
         } else if(mail.matcher(str).matches()){
             return "thisMail";
         } else return null;
+    }
+    public static void reader(Map<String, Document> fileToWriteInfo, String path){
+
+
 
     }
 }
