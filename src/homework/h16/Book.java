@@ -1,19 +1,15 @@
 package homework.h16;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Book {
     private final String bookName;
     private final int year;
-    private final String Author;
+    private final String author;
 
 
     public Book(String bookName, int year, String author) {
         this.bookName = bookName;
         this.year = year;
-        Author = author;
+        this.author = author;
     }
 
     @Override
@@ -21,7 +17,7 @@ public class Book {
         return "Book{" +
                 "bookName='" + bookName + '\'' +
                 ", year=" + year +
-                ", Author='" + Author + '\'' +
+                ", Author='" + author + '\'' +
                 '}';
     }
 
@@ -34,7 +30,7 @@ public class Book {
     }
 
     public String getAuthor() {
-        return Author;
+        return author;
     }
 
     }
