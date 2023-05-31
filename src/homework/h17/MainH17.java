@@ -16,9 +16,9 @@ public class MainH17 {
     public static final String DEFAULT_MAIL_FORMAT = "^[A-Za-z0-9+_.-]{2,}+@[A-Za-z]{2,}+.[A-Za-z]{2,}$";
 
     public static void main(String[] args) {
-        readerAndWriter("C:\\Users\\ale05\\HelloWorldProject\\src\\homework\\h17\\txtFiles\\my_first_fIle.txt","my_first_fIle");
-        readerAndWriter("C:\\Users\\ale05\\HelloWorldProject\\src\\homework\\h17\\txtFiles\\my_second_fIle.txt","my_second_fIle");
-        readerAndWriter("C:\\Users\\ale05\\HelloWorldProject\\src\\homework\\h17\\txtFiles\\my_third_fIle.txt","my_third_FIle");
+        readerAndWriter("src\\homework\\h17\\txtFiles\\my_first_fIle.txt","my_first_fIle");
+        readerAndWriter("src\\homework\\h17\\txtFiles\\my_second_fIle.txt","my_second_fIle");
+        readerAndWriter("src\\homework\\h17\\txtFiles\\my_third_fIle.txt","my_third_FIle");
 
         System.out.println(allDocs_Numbers_Emails);
     }
