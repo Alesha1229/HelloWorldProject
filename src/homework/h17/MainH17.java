@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 
 public class MainH17 {
-    static Map<String, Document> allDocs_Numbers_Emails = new TreeMap<>();
+    static Map<String, Document> allDocumentsInfo = new TreeMap<>();
 
 
 
@@ -16,14 +16,14 @@ public class MainH17 {
     public static final String DEFAULT_MAIL_FORMAT = "^[A-Za-z0-9+_.-]{2,}+@[A-Za-z]{2,}+.[A-Za-z]{2,}$";
 
     public static void main(String[] args) {
-        readerAndWriter("src\\homework\\h17\\txtFiles\\my_first_fIle.txt","my_first_fIle");
-        readerAndWriter("src\\homework\\h17\\txtFiles\\my_second_fIle.txt","my_second_fIle");
-        readerAndWriter("src\\homework\\h17\\txtFiles\\my_third_fIle.txt","my_third_FIle");
+        readAndWriteDocInfo("src\\homework\\h17\\txtFiles\\my_first_fIle.txt","my_first_fIle");
+        readAndWriteDocInfo("src\\homework\\h17\\txtFiles\\my_second_fIle.txt","my_second_fIle");
+        readAndWriteDocInfo("src\\homework\\h17\\txtFiles\\my_third_fIle.txt","my_third_FIle");
 
-        System.out.println(allDocs_Numbers_Emails);
+        System.out.println(allDocumentsInfo);
     }
 
-    public static String docOrPhoneOrMail(String str) {
+    public static String sortingDocPhoneMail(String str) {
         Pattern docNumber = Pattern.compile(DEFAULT_DOC_FORMAT);
         Pattern phoneNumber = Pattern.compile(DEFAULT_PHONE_FORMAT);
         Pattern mail = Pattern.compile(DEFAULT_MAIL_FORMAT);
@@ -37,7 +37,7 @@ public class MainH17 {
         } else return null;
     }
 
-    public static void readerAndWriter(String path, String fileName) {
+    public static void readAndWriteDocInfo(String path, String fileName) {
         Scanner scanner;
         try {
             FileReader reader = new FileReader(String.valueOf(path));
@@ -45,8 +45,6 @@ public class MainH17 {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-//        String [] myArr = path.split("."); //
-//        String fileName = myArr[0];
 
         List<String> docs = new ArrayList<>();
         String phone = null;
@@ -54,7 +52,7 @@ public class MainH17 {
 
         while (scanner.hasNext()) {
             String test = scanner.nextLine();
-            switch (Objects.requireNonNull(docOrPhoneOrMail(test))) {
+            switch (Objects.requireNonNull(sortingDocPhoneMail(test))) {
                 case "thisDoc" -> docs.add(test);
                 case "thisPhone" -> phone = test;
                 case "thisMail" -> mail = test;
@@ -62,7 +60,7 @@ public class MainH17 {
 
 
         }
-        allDocs_Numbers_Emails.put(fileName,new Document(docs, phone, mail));
+        allDocumentsInfo.put(fileName,new Document(docs, phone, mail));
 
 
 

@@ -4,9 +4,21 @@ import java.util.List;
 import java.util.Optional;
 
 public class Document {
-    List<String> documents;
-    String phoneNumber;
-    String email;
+    private List<String> documents;
+    private String phoneNumber;
+    private String email;
+
+    public void setDocuments(List<String> documents) {
+        this.documents = documents;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public Document(List<String> documents, String phoneNumber, String email) {
         this.documents = documents;
